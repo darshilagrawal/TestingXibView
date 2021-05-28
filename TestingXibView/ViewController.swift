@@ -13,6 +13,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        let vc=UIViewController(nibName: "MainViewFromNib", bundle: nil)
+        self.present(vc, animated: true, completion: nil)
+    }
 
 
 }
