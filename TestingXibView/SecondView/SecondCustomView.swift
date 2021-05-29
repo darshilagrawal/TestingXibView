@@ -44,6 +44,11 @@ import UIKit
       testCollectionView.dataSource = self
     }
     
+    override func prepareForInterfaceBuilder() {
+        super.prepareForInterfaceBuilder()
+       loadViewFromNib()
+        view?.prepareForInterfaceBuilder()
+    }
     
     }
 

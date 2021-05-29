@@ -32,5 +32,12 @@ class CustomView:UIView{
             addSubview(view)
             self.view = view
         }
+    
+    override func prepareForInterfaceBuilder() {
+        super.prepareForInterfaceBuilder()
+       loadViewFromNib()
+        view?.prepareForInterfaceBuilder()
+    }
+    
     }
 
