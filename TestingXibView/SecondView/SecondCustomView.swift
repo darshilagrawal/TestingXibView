@@ -41,6 +41,8 @@ import UIKit
      func initCollectionView() {
       let nib = UINib(nibName: "SecondCustomCollectionViewCell", bundle: nil)
       testCollectionView.register(nib, forCellWithReuseIdentifier: "SecondCustomCollectionViewCell")
+        let nib2 = UINib(nibName: "AnotherTypeCollectionViewCell", bundle: nil)
+        testCollectionView.register(nib2, forCellWithReuseIdentifier: "AnotherTypeCollectionViewCell")
       testCollectionView.dataSource = self
     }
     
@@ -58,11 +60,20 @@ extension SecondCustomView :UICollectionViewDataSource{
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell=testCollectionView.dequeueReusableCell(withReuseIdentifier: "SecondCustomCollectionViewCell", for: indexPath) as? SecondCustomCollectionViewCell else{
-            fatalError("Unable to load Cells")
+        switch indexPath.row % 2 {
+        case 0:
+            guard let cell=testCollectionView.dequeueReusableCell(withReuseIdentifier: "SecondCustomCollectionViewCell", for: indexPath) as? SecondCustomCollectionViewCell else{
+                fatalError("Unable to load Cells")
+            }
+            cell.customCellLabel.text="\(indexPath.row)"
+            return cell
+        default:
+            guard let cell=testCollectionView.dequeueReusableCell(withReuseIdentifier: "AnotherTypeCollectionViewCell", for: indexPath) as? AnotherTypeCollectionViewCell else{
+                fatalError("Unable to load Cells")
+            }
+            return cell
         }
-        cell.customCellLabel.text="\(indexPath.row)"
-        return cell
+        
     }
 }
 

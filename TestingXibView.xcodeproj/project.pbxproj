@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D5540F79266AA2DC00B83409 /* AnotherTypeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5540F77266AA2DC00B83409 /* AnotherTypeCollectionViewCell.swift */; };
+		D5540F7A266AA2DC00B83409 /* AnotherTypeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5540F78266AA2DC00B83409 /* AnotherTypeCollectionViewCell.xib */; };
 		D5B947BE2660CA2A0073CC3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B947BD2660CA2A0073CC3C /* AppDelegate.swift */; };
 		D5B947C02660CA2A0073CC3C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B947BF2660CA2A0073CC3C /* SceneDelegate.swift */; };
 		D5B947C22660CA2A0073CC3C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B947C12660CA2A0073CC3C /* ViewController.swift */; };
@@ -24,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D5540F77266AA2DC00B83409 /* AnotherTypeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnotherTypeCollectionViewCell.swift; sourceTree = "<group>"; };
+		D5540F78266AA2DC00B83409 /* AnotherTypeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnotherTypeCollectionViewCell.xib; sourceTree = "<group>"; };
 		D5B947BA2660CA2A0073CC3C /* TestingXibView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestingXibView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5B947BD2660CA2A0073CC3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5B947BF2660CA2A0073CC3C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +107,8 @@
 				D5B947D92660D0BA0073CC3C /* SecondCustomView.xib */,
 				D5B947DB2660D5EE0073CC3C /* SecondCustomCollectionViewCell.swift */,
 				D5B947DC2660D5EE0073CC3C /* SecondCustomCollectionViewCell.xib */,
+				D5540F77266AA2DC00B83409 /* AnotherTypeCollectionViewCell.swift */,
+				D5540F78266AA2DC00B83409 /* AnotherTypeCollectionViewCell.xib */,
 			);
 			path = SecondView;
 			sourceTree = "<group>";
@@ -166,6 +172,7 @@
 			files = (
 				D5B947E22660EAF60073CC3C /* MainViewFromNib.xib in Resources */,
 				D5B947CA2660CA2F0073CC3C /* LaunchScreen.storyboard in Resources */,
+				D5540F7A266AA2DC00B83409 /* AnotherTypeCollectionViewCell.xib in Resources */,
 				D5B947DE2660D5EE0073CC3C /* SecondCustomCollectionViewCell.xib in Resources */,
 				D5B947D42660CBD80073CC3C /* CustomView.xib in Resources */,
 				D5B947C72660CA2F0073CC3C /* Assets.xcassets in Resources */,
@@ -182,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5B947E42660EBCD0073CC3C /* MainViewFromNib.swift in Sources */,
+				D5540F79266AA2DC00B83409 /* AnotherTypeCollectionViewCell.swift in Sources */,
 				D5B947D82660D09C0073CC3C /* SecondCustomView.swift in Sources */,
 				D5B947DD2660D5EE0073CC3C /* SecondCustomCollectionViewCell.swift in Sources */,
 				D5B947C22660CA2A0073CC3C /* ViewController.swift in Sources */,
