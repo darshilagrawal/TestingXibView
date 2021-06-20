@@ -56,7 +56,7 @@ import UIKit
 
 extension SecondCustomView :UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        5
+        10
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -65,7 +65,8 @@ extension SecondCustomView :UICollectionViewDataSource{
             guard let cell=testCollectionView.dequeueReusableCell(withReuseIdentifier: "SecondCustomCollectionViewCell", for: indexPath) as? SecondCustomCollectionViewCell else{
                 fatalError("Unable to load Cells")
             }
-            cell.customCellLabel.text="\(indexPath.row)"
+            cell.text = indexPath.row
+//            cell.customCellLabel.text="\(indexPath.row)"
             return cell
         default:
             guard let cell=testCollectionView.dequeueReusableCell(withReuseIdentifier: "AnotherTypeCollectionViewCell", for: indexPath) as? AnotherTypeCollectionViewCell else{

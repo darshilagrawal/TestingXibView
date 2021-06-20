@@ -27,15 +27,24 @@
                                 <rect key="frame" x="0.0" y="442" width="414" height="400"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ool-2b-HZU">
+                                <rect key="frame" x="10" y="391" width="394" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                         <constraints>
                             <constraint firstItem="x8H-CT-Xc1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="AGX-t2-QZD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ool-2b-HZU" secondAttribute="trailing" constant="10" id="BS5-pJ-FTJ"/>
+                            <constraint firstItem="u9W-PH-5id" firstAttribute="top" secondItem="ool-2b-HZU" secondAttribute="bottom" constant="17" id="Nlq-Bc-Dj5"/>
+                            <constraint firstItem="ool-2b-HZU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="YHh-cP-feX"/>
                             <constraint firstItem="x8H-CT-Xc1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="57" id="ZP8-qt-LwO"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="x8H-CT-Xc1" secondAttribute="trailing" constant="57" id="f2v-9o-UMC"/>
                             <constraint firstItem="u9W-PH-5id" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jAJ-vt-4PT"/>
                             <constraint firstItem="u9W-PH-5id" firstAttribute="top" secondItem="x8H-CT-Xc1" secondAttribute="bottom" constant="68" id="mXS-Kr-BMu"/>
+                            <constraint firstItem="ool-2b-HZU" firstAttribute="top" secondItem="x8H-CT-Xc1" secondAttribute="bottom" constant="17" id="mZO-Qk-d2L"/>
                             <constraint firstItem="u9W-PH-5id" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="tZy-Z8-ldO"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="u9W-PH-5id" secondAttribute="bottom" constant="20" id="u4N-tl-4kz"/>
                         </constraints>
