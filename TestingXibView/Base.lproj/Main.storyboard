@@ -49,6 +49,9 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="u9W-PH-5id" secondAttribute="bottom" constant="20" id="u4N-tl-4kz"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="numberOfItemsField" destination="ool-2b-HZU" id="tMk-MW-ZN4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

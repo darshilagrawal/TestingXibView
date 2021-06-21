@@ -7,10 +7,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
 
+    @IBOutlet weak var numberOfItemsField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
+        numberOfItemsField.delegate = self
+        
         // Do any additional setup after loading the view.
     }
     
